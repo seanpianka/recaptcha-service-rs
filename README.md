@@ -35,7 +35,7 @@ async fn main() {
     let remote_ip_address = "127.0.0.1".to_string();
 
     // Perform the remote call
-    match service.verify(input_token, None).await {
+    match service.verify(input_token, Some(remote_ip_address)).await {
         Ok(..) => {
             println!("Succeeded!");
         }
@@ -79,7 +79,7 @@ async fn main() {
     let remote_ip_address = "127.0.0.1".to_string();
 
     // Perform the remote call
-    match service.verify(input_token, None).await {
+    match service.verify(input_token, Some(remote_ip_address)).await {
         Ok(..) => {
             println!("Succeeded!");
         }
