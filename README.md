@@ -10,8 +10,8 @@ Add the following to your `Cargo.toml`
 
 ```toml
 recaptcha-service-rs = { git = "https://github.com/seanpianka/recaptcha-service-rs.git", branch = "master" }
-// You can also pin to a specific revision / commit:
-// recaptcha-service-rs = { git = "https://github.com/seanpianka/recaptcha-service-rs.git", rev = "ecf213f" }
+# You can also pin to a specific revision / commit:
+# recaptcha-service-rs = { git = "https://github.com/seanpianka/recaptcha-service-rs.git", rev = "ecf213f" }
 ```
 
 ## Usage
