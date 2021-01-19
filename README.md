@@ -32,7 +32,7 @@ async fn main() {
 
     // Recaptcha input
     let input_token = "my_totally_valid_token".to_string();
-    let remote_ip_address = "my_totally_valid_token".to_string();
+    let remote_ip_address = "127.0.0.1".to_string();
 
     // Perform the remote call
     match service.verify(input_token, None).await {
@@ -76,7 +76,7 @@ async fn main() {
 
     // Recaptcha input
     let input_token = "my_totally_valid_token".to_string();
-    let remote_ip_address = "my_totally_valid_token".to_string();
+    let remote_ip_address = "127.0.0.1".to_string();
 
     // Perform the remote call
     match service.verify(input_token, None).await {
