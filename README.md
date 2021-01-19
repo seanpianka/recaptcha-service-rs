@@ -27,6 +27,9 @@ To verify your recaptcha token, call the `.verify("recaptcha_token", Some("remot
 ```rust
 #[tokio::main]
 async fn main() {
+    // Initialize the recaptcha service.
+    let service = recaptcha::new_service("MY_SECRET_KEY".to_string());
+
     // Recaptcha input
     let input_token = "my_totally_valid_token".to_string();
     let remote_ip_address = "my_totally_valid_token".to_string();
@@ -60,6 +63,7 @@ use recaptcha;
 
 #[tokio::main]
 async fn main() {
+    // Initialize the recaptcha service.
     let service = recaptcha::new_service("MY_SECRET_KEY".to_string());
 
     // Build a logger using sloggers.
