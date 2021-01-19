@@ -4,6 +4,16 @@ A simple type for interfacing with Google's recaptcha API.
 
 This crate includes an additional "logging" module, which logs all metadata request using [slog-rs](https://github.com/slog-rs/slog).
 
+## Installation
+
+Add the following to your `Cargo.toml`
+
+```toml
+recaptcha-service-rs = { git = "https://github.com/seanpianka/recaptcha-service-rs.git", branch = "master" }
+// You can also pin to a specific revision / commit:
+// recaptcha-service-rs = { git = "https://github.com/seanpianka/recaptcha-service-rs.git", rev = "ecf213f" }
+```
+
 ## Usage
 
 Initialize the service with the exported function `recaptcha::new_service(your_secret_key)` function.
