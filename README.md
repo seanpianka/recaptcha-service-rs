@@ -2,7 +2,7 @@
 
 A simple type for interfacing with Google's recaptcha API. 
 
-This crate includes an additional "logging" module, which logs all metadata request using [slog-rs](https://github.com/slog-rs/slog).
+This crate includes an additional "logging" module, which logs all request metadata using [slog-rs](https://github.com/slog-rs/slog).
 
 ## Installation
 
